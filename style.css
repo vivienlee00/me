@@ -44,7 +44,7 @@ html {
 
 
 body {
-    background-color: #ffe5d4;
+    background-color: #fff6ef;
     color: rgb(19, 18, 71);
     /* font-family: 'Josefin Slab', serif; */
     font-family: 'Poppins', sans-serif;
@@ -182,11 +182,11 @@ ul {
 
 @media screen and (max-width: 500px) {
     body {
-        background-color: #ffe5d4;
+        background-color: #fff6ef;
         max-width: 100%;
         color: rgb(19, 18, 71);
-        font-family: 'Josefin Slab', serif;
-        text-align: center;
+        /* font-family: 'Josefin Slab', serif;
+        text-align: center; */
         padding-top: 12vh;
         margin: 0;
         /* margin-left: 10vw;
@@ -340,4 +340,12 @@ ul {
 
 .text-align-center {
     text-align: center;
+}
+
+.sticky {
+    background-color: #fff6ef;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    z-index: 10;
 }
