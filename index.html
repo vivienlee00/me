@@ -30,17 +30,32 @@
 <body id="body">
     <nav class="sticky">
         <ul class="list-inline">
-            <li><a href="#a">Section A</a></li>
-            <li><a href="#b">Section B</a></li>
-            <li><a href="#c">Section C</a></li>
-            <li><a href="#d">Section D</a></li>
+            <li><a class="text-decoration-none" href="#a">👩🏻‍💻</a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><a class="text-decoration-none" href="#a">résumé</a></li>
+            <li><a class="text-decoration-none" href="#b">projects</a></li>
+            <li><a class="text-decoration-none" href="#c">art</a></li>
+            <li><a class="text-decoration-none" href="#d">about</a></li>
         </ul>
     </nav>
     <div class="text">
         <span id="app"></span>
-        <span class="secondary-text">an <b>NYC-based 🌆 creative</b> with experience in <b>software
-                development</b>👩🏻‍💻 and
-            extensive knowledge of the <b>beauty / luxury industries 💄</b>.</span>
+        <span class="secondary-text">an <b>NYC-based 🌆 creative</b> with experience in <b>web
+                development</b> 👩🏻‍💻 and
+            extensive knowledge of the <b>beauty & luxury industries 💄</b>.</span>
         <br></br>
         <span class="secondary-text">I love <b>making things look beautiful</b> while establishing and staying true to a
             <b>brand identity / personality</b>.</span>
@@ -53,7 +68,7 @@
         </a>
     </div>
     <div id="content">
-        hiiiiiiiiiiiiiiiiiiiiiii :3
+        <!-- hiiiiiiiiiiiiiiiiiiiiiii :3
         <br>
         here's what you need to know:
         <ul>
@@ -103,12 +118,19 @@
             <input name="sleepover" type="checkbox" value="yes">
             <label for="party">sleeping over?</label><br>
             <button id="rsvpButton" class="button-8" onclick="buttonFeedback()" type="submit">rsvp</button>
-        </form>
+        </form> -->
         <!-- <div id="slides">
             <div class="google-slides-container">
                 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQRiUofm229HhOKrxl6Nkdo1r4dhclo3qUe9cuVS8NKNwo7uviAcrjdCSUuOxVIirPyIurcUV9jEir7/embed?start=false&loop=true&delayms=10000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>    
             </div>    
         </div> -->
+        <div id="resume">
+            <object data="assets\071723MarketingResume.pdf" type="application/pdf" style="min-height:27vw;width:18vw">
+                <p>Unable to display PDF file. <a
+                    href="assets\071723MarketingResume.pdf">Download</a>
+                 my résumé instead, please!</p>
+            </object>
+        </div>
     </div>
 </body>
 
@@ -138,7 +160,7 @@
     function showContent() {
         var isMobile = navigator.userAgent.match(/mobile|opera m(ob|in)/i);
         if (!isMobile) {
-            document.getElementById('body').style.minHeight = "185vh";
+            document.getElementById('body').style.minHeight = "300vh";
         } else {
             document.getElementById('body').style.minHeight = "275vh";
         }

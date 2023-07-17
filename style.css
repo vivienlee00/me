@@ -49,11 +49,12 @@ body {
     /* font-family: 'Josefin Slab', serif; */
     font-family: 'Poppins', sans-serif;
     /* text-align: center; */
-    padding-top: 13vh;
+    /* padding-top: 13vh; */
     -ms-overflow-style: none;
     /* Internet Explorer 10+ */
     scrollbar-width: none;
     /* Firefox */
+    margin: 0 0 0 0;
 }
 
 body::-webkit-scrollbar {
@@ -65,6 +66,7 @@ body::-webkit-scrollbar {
     width: 70%;
     margin: auto;
     font-size: 4vh;
+    padding-top: 13vh;
 }
 
 span {
@@ -88,7 +90,7 @@ span {
     padding-left: 10vw;
     padding-right: 10vw;
     padding-top: 3vh;
-    margin-top: 37vh;
+    margin-top: 40vh;
     width: 80vw;
     font-size: 1.8vh !important;
     font-family: 'Poppins', sans-serif;
@@ -99,7 +101,7 @@ span {
 }
 
 a {
-    color: rgb(23, 15, 107);
+    color: rgb(90, 93, 120);
 }
 
 .google-slides-container {
@@ -348,4 +350,37 @@ ul {
 	position: sticky;
 	top: 0;
     z-index: 10;
+}
+
+/**
+ * Display lists on a single line.
+ * @bugfix Prevent webkit from removing list semantics
+ * 1. Add a non-breaking space
+ * 2. Make sure it doesn't mess up the DOM flow
+ */
+ .list-inline {
+	list-style: none;
+	padding: 0;
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0 5vh 0;
+}
+
+.list-inline > li {
+	display: inline-block;
+	margin-left: 2vw;
+	margin-right: 2vw;
+}
+
+.list-inline > li:before {
+	content: "\200B"; /* 1 */
+	position: absolute; /* 2 */
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.text-decoration-none:hover {
+    font-weight: 700;
 }
