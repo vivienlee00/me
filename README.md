@@ -5,8 +5,9 @@ backlog:
 - emoji favicon
 
 - resume
-    - La Mer
-    - FM CMS
+    - done - La Mer
+    - done- FM CMS
+    - add braze integration to resume
 - projects
     - this website!
     - Polestar UX design case study - embed slides?
@@ -23,3 +24,4 @@ backlog:
 - about
     - mbti
     - *here, take my card* →	scrolls back to resume
+

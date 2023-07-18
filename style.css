@@ -89,7 +89,7 @@ span {
     position: absolute;
     padding-left: 10vw;
     padding-right: 10vw;
-    padding-top: 3vh;
+    padding-top: 15vh;
     margin-top: 40vh;
     width: 80vw;
     font-size: 1.8vh !important;
@@ -337,7 +337,7 @@ ul {
 }
 
 .secondary-text {
-    color:rgb(90, 93, 120)
+    color: rgb(90, 93, 120)
 }
 
 .text-align-center {
@@ -346,9 +346,9 @@ ul {
 
 .sticky {
     background-color: #fff6ef;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     z-index: 10;
 }
 
@@ -358,23 +358,25 @@ ul {
  * 1. Add a non-breaking space
  * 2. Make sure it doesn't mess up the DOM flow
  */
- .list-inline {
-	list-style: none;
-	padding: 0;
+.list-inline {
+    list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
     padding: 5vh 0 5vh 0;
 }
 
-.list-inline > li {
-	display: inline-block;
-	margin-left: 2vw;
-	margin-right: 2vw;
+.list-inline>li {
+    display: inline-block;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
-.list-inline > li:before {
-	content: "\200B"; /* 1 */
-	position: absolute; /* 2 */
+.list-inline>li:before {
+    content: "\200B";
+    /* 1 */
+    position: absolute;
+    /* 2 */
 }
 
 .text-decoration-none {
@@ -383,4 +385,49 @@ ul {
 
 .text-decoration-none:hover {
     font-weight: 700;
+}
+
+.zoom {
+    /* padding: 50px; */
+    transition: transform .2s;
+    /* Animation */
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.15);
+}
+
+.rounded-50 {
+    object-fit: cover;
+    /* border-radius: 50%; */
+    border-radius: 2em;
+}
+
+.image-sz-300 {
+    width: 30vh;
+    height: 30vh;
+}
+
+.image-bw {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.profile-image {
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+.contacts {
+    margin-bottom: 2rem;
+}
+
+.contacts>p {
+    margin-bottom: 0;
+}
+
+.skill-badge {
+    font-weight: 200;
 }
