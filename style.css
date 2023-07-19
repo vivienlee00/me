@@ -182,14 +182,115 @@ ul {
     color: #2c5777;
 }
 
+.secondary-text {
+    color: rgb(90, 93, 120)
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.sticky {
+    background-color: #fff6ef;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/**
+ * Display lists on a single line.
+ * @bugfix Prevent webkit from removing list semantics
+ * 1. Add a non-breaking space
+ * 2. Make sure it doesn't mess up the DOM flow
+ */
+.list-inline {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0 5vh 0;
+}
+
+.list-inline>li {
+    display: inline-block;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.list-inline>li:before {
+    content: "\200B";
+    /* 1 */
+    position: absolute;
+    /* 2 */
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.text-decoration-none:hover {
+    font-weight: 700;
+}
+
+.zoom {
+    /* padding: 50px; */
+    transition: transform .2s;
+    /* Animation */
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.15);
+}
+
+.rounded-50 {
+    object-fit: cover;
+    /* border-radius: 50%; */
+    border-radius: 2em;
+}
+
+.image-sz-300 {
+    width: 30vh;
+    height: 30vh;
+}
+
+.image-bw {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.profile-image {
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+.contacts {
+    margin-bottom: 2rem;
+}
+
+.contacts>p {
+    margin-bottom: 0;
+}
+
+.skill-badge {
+    font-weight: 200;
+}
+
+
 @media screen and (max-width: 500px) {
+    .sticky {
+        display: none;
+    }
+
     body {
         background-color: #fff6ef;
         max-width: 100%;
         color: rgb(19, 18, 71);
         /* font-family: 'Josefin Slab', serif;
         text-align: center; */
-        padding-top: 12vh;
+        padding-top: 0;
         margin: 0;
         /* margin-left: 10vw;
         margin-right: 10vw; */
@@ -197,6 +298,7 @@ ul {
         /* Internet Explorer 10+ */
         /* scrollbar-width: none; */
         /* Firefox */
+        overflow-x: hidden;
     }
 
     /* #app {
@@ -210,13 +312,13 @@ ul {
     }
 
     .text {
-        width: 60%;
+        width: 84%;
+        font-size: 3vh;
         margin: auto;
-        font-size: 4vh;
     }
 
     span {
-        font-size: 4vh;
+        font-size: 3vh;
     }
 
     #banger {
@@ -225,9 +327,9 @@ ul {
 
     #down {
         width: unset !important;
-        top: 65vh;
+        top: 81vh;
         cursor: pointer;
-        left: 47vw;
+        left: 44vw;
     }
 
     #content {
@@ -334,100 +436,20 @@ ul {
         color: #2c5777;
     }
 
-}
+    h6 {
+        font-size: 1.5em;
+    }
 
-.secondary-text {
-    color: rgb(90, 93, 120)
-}
+    .contacts {
+        font-size: 1.3em;
+        margin-bottom: 1rem;
+    }
 
-.text-align-center {
-    text-align: center;
-}
+    .skill-badge {
+        margin-bottom: 2px;
+    }
 
-.sticky {
-    background-color: #fff6ef;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-/**
- * Display lists on a single line.
- * @bugfix Prevent webkit from removing list semantics
- * 1. Add a non-breaking space
- * 2. Make sure it doesn't mess up the DOM flow
- */
-.list-inline {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    padding: 5vh 0 5vh 0;
-}
-
-.list-inline>li {
-    display: inline-block;
-    margin-left: 2vw;
-    margin-right: 2vw;
-}
-
-.list-inline>li:before {
-    content: "\200B";
-    /* 1 */
-    position: absolute;
-    /* 2 */
-}
-
-.text-decoration-none {
-    text-decoration: none;
-}
-
-.text-decoration-none:hover {
-    font-weight: 700;
-}
-
-.zoom {
-    /* padding: 50px; */
-    transition: transform .2s;
-    /* Animation */
-    margin: 0 auto;
-}
-
-.zoom:hover {
-    transform: scale(1.15);
-}
-
-.rounded-50 {
-    object-fit: cover;
-    /* border-radius: 50%; */
-    border-radius: 2em;
-}
-
-.image-sz-300 {
-    width: 30vh;
-    height: 30vh;
-}
-
-.image-bw {
-    -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-}
-
-.profile-image {
-    margin-top: 1vh;
-    margin-bottom: 3vh;
-}
-
-.contacts {
-    margin-bottom: 2rem;
-}
-
-.contacts>p {
-    margin-bottom: 0;
-}
-
-.skill-badge {
-    font-weight: 200;
+    .pdf-viewer-mobile {
+        width: 103vw;
+    }
 }
