@@ -32,10 +32,16 @@
 
 .bounce {
     opacity: 0;
-    animation: 1.5s fadeIn 14s forwards, bounce 2s infinite;
+    animation: 1.8s fadeIn 14s forwards, bounce 2s infinite;
     /* animation-delay first argument is time before bouncing arrow fades in */
     /* original in birthday invite: 12.9s */
-    animation-delay: 2.9s, 13.6s
+    animation-delay: 2.9s, 4.6s;
+}
+
+.fadeIn {
+    opacity: 0;
+    animation: 1.8s fadeIn 14s forwards;
+    animation-delay: 2.8s;
 }
 
 html {
