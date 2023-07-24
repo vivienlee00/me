@@ -92,6 +92,7 @@ span {
     padding-top: 15vh;
     margin-top: 40vh;
     /* width: 80vw; */
+    width: 100vw;
     font-size: 1.8vh !important;
     font-family: 'Poppins', sans-serif;
 }
@@ -279,7 +280,7 @@ ul {
 }
 
 #projects {
-    min-height: 80vh;
+    min-height: 90vh;
 }
 
 
