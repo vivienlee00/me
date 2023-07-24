@@ -91,7 +91,7 @@ span {
     padding-right: 10vw;
     padding-top: 15vh;
     margin-top: 40vh;
-    width: 80vw;
+    /* width: 80vw; */
     font-size: 1.8vh !important;
     font-family: 'Poppins', sans-serif;
 }
@@ -278,6 +278,10 @@ ul {
     font-weight: 200;
 }
 
+#projects {
+    min-height: 80vh;
+}
+
 
 @media screen and (max-width: 500px) {
     .sticky {
@@ -339,7 +343,7 @@ ul {
         padding-right: 10vw;
         padding-top: 3vh;
         margin-top: 46vh;
-        width: 80vw;
+        /* width: 80vw; */
         font-size: 1.9vh !important;
         font-family: 'Poppins', sans-serif;
     }
@@ -451,5 +455,9 @@ ul {
 
     .pdf-viewer-mobile {
         width: 103vw;
+    }
+
+    .mobile-display-none {
+        display: none !important;
     }
 }
