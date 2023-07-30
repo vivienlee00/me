@@ -7,7 +7,7 @@ backlog:
 - resume
     - done - La Mer
     - done- FM CMS
-    - add braze integration to resume
+    - done - add braze integration to resume
 - projects
     - this website!
     - Polestar UX design case study - embed slides?
