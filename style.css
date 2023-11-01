@@ -38,6 +38,10 @@
     animation-delay: 2.9s, 4.6s;
 }
 
+.currently {
+    margin-bottom: .8rem;
+}
+
 .fadeIn {
     opacity: 0;
     animation: 1.8s fadeIn 14s forwards;
