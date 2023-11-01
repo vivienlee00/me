@@ -1,5 +1,14 @@
 # me
 
+[vivienlee00.github.io/me/](https://vivienlee00.github.io/me/)
+
+https://css-tricks.com/scroll-drawing/
+
+https://dev.to/emilcheva/connect-sections-by-drawing-dashed-svg-paths-on-scroll-3bcb
+
+
+
+
 backlog: 
 - add moving underline to corresponding navbar section
 - emoji favicon
