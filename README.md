@@ -34,3 +34,5 @@ backlog:
     - mbti
     - *here, take my card* →	scrolls back to resume
 
+- microlink previews to project sites in collapisble drawers: fm, skinsights, cornellkpl
+- achievements: maplestory, cancer, act, nms, getty images
