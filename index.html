@@ -86,13 +86,13 @@
                     <div class="row skillset">
                         <b>Interests:</b>
                         <p>
-                            <span class="badge skill-badge text-bg-primary">JavaScript ☕️</span>
-                            <span class="badge skill-badge text-bg-primary">Fashion 👗</span>
-                            <span class="badge skill-badge text-bg-primary">Brand-building 👜</span>
-                            <span class="badge skill-badge text-bg-primary">Art 🖼️</span>
-                            <span class="badge skill-badge text-bg-primary">K-Pop 🎧</span>
-                            <span class="badge skill-badge text-bg-primary">Gen-Z / TikTok trends 🎶</span>
-                            <span class="badge skill-badge text-bg-primary">All things luxury 💎</span>
+                            <span class="badge skill-badge text-bg-custom-purple">JavaScript ☕️</span>
+                            <span class="badge skill-badge text-bg-custom-purple">Fashion 👗</span>
+                            <span class="badge skill-badge text-bg-custom-purple">Brand-building 👜</span>
+                            <span class="badge skill-badge text-bg-custom-purple">Art 🖼️</span>
+                            <span class="badge skill-badge text-bg-custom-purple">K-Pop 🎧</span>
+                            <span class="badge skill-badge text-bg-custom-purple">Gen-Z / TikTok trends 🎶</span>
+                            <span class="badge skill-badge text-bg-custom-purple">All things luxury 💎</span>
                         </p>
                     </div>
                     <div class="row skillset">
@@ -183,22 +183,6 @@
             document.getElementById('body').style.minHeight = "275vh";
         }
         document.getElementById('content').style.display = "block";
-    }
-
-    const form = document.forms['submit-to-google-sheet']
-
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-    })
-
-    function buttonFeedback() {
-        document.getElementById('rsvpButton').innerHTML = '<span id="loading-section" style="font-size:1.9vh;"><i class="fa fa-spinner fa-spin fa-fw"></i> saving...</span>';
-        setInterval(function () {
-            document.getElementById('rsvpButton').innerHTML = 'saved ✔';
-        }, 2500)
     }
 </script>
 

@@ -10,29 +10,25 @@ https://dev.to/emilcheva/connect-sections-by-drawing-dashed-svg-paths-on-scroll-
 
 
 backlog: 
-- add moving underline to corresponding navbar section
+- navbar scrollspy
 - emoji favicon
+- update resume
 
-- resume
-    - done - La Mer
-    - done- FM CMS
-    - done - add braze integration to resume
 - projects
-    - this website!
-    - Polestar UX design case study - embed slides?
-    - BudgetBud UX design assets, slides - embed figma
+    - frederic malle perfume finder
     - Estee Lauder skInsights - embed figma
+    - BudgetBud UX design assets, slides - embed figma
+    - Polestar UX design case study - embed slides?
     - KPL
         - webchair 
         - PR chair
         - other positions held: VP, social chair - include years
-    - Thread - embed magazine?
+     - this website!
 - art
     - klee caps
     - photography
 - about
     - mbti
-    - *here, take my card* →	scrolls back to resume
-
-- microlink previews to project sites in collapisble drawers: fm, skinsights, cornellkpl
-- achievements: maplestory, cancer, act, nms, getty images
+    - getty images
+    - leukemia
+    - maplestory level 200
