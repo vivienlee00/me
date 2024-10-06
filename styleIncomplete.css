@@ -95,6 +95,10 @@
     font-size: 5vh;
 }
 
+.font-size-3vh {
+    font-size: 3vh;
+}
+
 .text-glow {
     text-shadow: 0 0 15px rgba(179, 186, 255, 0.9), 
                  0 0 20px rgba(215, 219, 255, 0.7), 
@@ -102,8 +106,26 @@
                  0 0 40px rgba(255, 255, 255, 0.4);
 }
 
+.text-glow-bulb {
+    text-shadow: 0 0 15px rgba(255, 217, 0, 0.9), 
+                 0 0 20px rgba(255, 170, 66, 0.7), 
+                 0 0 30px rgba(255, 255, 255, 0.6), 
+                 0 0 40px rgba(255, 255, 255, 0.4);
+}
+
+.fun-facts-card {
+    background-color: rgba(50, 60, 113, 0.2);
+    /* background-color: white; */
+    color: white;
+    /* opacity: 20%; */
+}
+
 .secondary-text {
     color: rgb(90, 93, 120);
+}
+
+.primary-text {
+    color: rgb(19, 18, 71);
 }
 
 .currently {
@@ -584,6 +606,10 @@ ul {
 
     #content span#badge-card {
         font-size: 4vh !important;
+    }
+
+    #content span#ffTitle {
+        font-size: 3vh !important;
     }
 }
 
