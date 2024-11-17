@@ -5,5 +5,3 @@
 
 backlog: 
 - navbar scrollspy
-- emoji favicon
-

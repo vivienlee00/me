@@ -466,11 +466,13 @@ ul {
 
     #banger {
         font-size: 5vh !important;
+        font-size: 5lvh !important;
     }
 
     #down {
         width: unset !important;
         top: 81vh;
+        top: 81lvh;
         cursor: pointer;
         left: 44vw;
     }
@@ -484,11 +486,17 @@ ul {
         margin-top: 46vh;
         /* width: 80vw; */
         font-size: 1.9vh !important;
+        padding-top: 3lvh;
+        margin-top: 46lvh;
+        /* width: 80vw; */
+        font-size: 1.9lvh !important;
+
         font-family: 'Poppins', sans-serif;
     }
 
     #content span {
         font-size: 1.9vh !important;
+        font-size: 1.9lvh !important;
     }
 
     #content ul {
@@ -548,11 +556,13 @@ ul {
         display: inline-block;
         font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
         font-size: 1.9vh;
+        font-size: 1.9lvh;
         font-weight: 400;
         line-height: 1.15385;
         margin: 0;
         outline: none;
         padding: 1vh 1.5vh;
+        padding: 1lvh 1.5lvh;
         position: relative;
         text-align: center;
         text-decoration: none;
@@ -602,14 +612,17 @@ ul {
 
     .card {
         margin-top: 5vh;
+        margin-top: 5lvh;
     }
 
     #content span#badge-card {
         font-size: 4vh !important;
+        font-size: 4lvh !important;
     }
 
     #content span#ffTitle {
         font-size: 3vh !important;
+        font-size: 3lvh !important;
     }
 }
 
